@@ -1,0 +1,23 @@
+title Saving a Note - Vanilla JS
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+Server-->Browser: 302 Redirect /notes
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->Browser: HTML Code
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Browser: main.js
+
+note over Browser:
+browser runs js code
+end note
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: ["{ content: "", date: "2022-07-10T07:30:52.848Z" }", ...]
+
+note over Browser:
+browser renders new content from json
+end note

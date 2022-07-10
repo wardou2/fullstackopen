@@ -1,0 +1,9 @@
+title SPA
+note left of Browser:
+User types new note and clicks "save"
+* js code adds notes to DOM
+* js code triggers HTTP Post
+end note
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Server-->Browser: Status 201 Created, message "note created"
+
